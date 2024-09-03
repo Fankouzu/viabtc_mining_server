@@ -1,4 +1,4 @@
-
+```sh
 sudo apt install -y libcurl4-openssl-dev libssl-dev libpsl-dev libnghttp2-dev libsodium-dev redis-server cmake zlib1g-dev libkrb5-dev libidn2-0-dev librtmp-dev libbrotli-dev libssh-dev 
 
 cd viabtc_mining_server/
@@ -30,3 +30,4 @@ cd ../metarelay
 make
 cd ../alertcenter
 make
+```
