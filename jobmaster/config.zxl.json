@@ -1,0 +1,54 @@
+{
+    "process": {
+        "file_limit": 1000000,
+        "core_limit": 1000000000
+    },
+    "log": {
+        "path": "/var/log/pool/jobmaster",
+        "flag": "debug"
+    },
+    "alert": {
+        "host": "192.168.1.1",
+        "addr": "192.168.1.1:10000"
+    },
+    "svr": {
+        "bind": [
+            "tcp@0.0.0.0:6000",
+            "udp@0.0.0.0:6000"
+        ],
+        "max_pkg_size": 1048576
+    },
+    "cli": "tcp@127.0.0.1:6001",
+    "main_coin": {
+        "name": "FB",
+        "host": "38.60.171.236",
+        "port": 8332,
+        "user": "fractalbitcoin",
+        "pass": "fractalbitcoin_1234567"
+    },
+    "aux_merkle_nonce": 0,
+    "aux_merkle_size": 16,
+    "aux_job_timeout": 15,
+    "blockmaster": [
+        "tcp@127.0.0.1:5000"
+    ],
+    "http_svr": {
+        "bind": [
+            "tcp@0.0.0.0:8103"
+        ],
+        "max_pkg_size": 102400
+    },
+    "blockmaster_timeout": 60,
+    "jobmonitor": "tcp@127.0.0.1:9000",
+    "main_coin_recipient": "1FtiSHFDTpLvurxnBsSTLNT3B4aqyRxm9x",
+    "coin_recipients": [
+    ],
+    "main_block_version": 536870928,
+    "job_rebroadcast_timeout": 50,
+    "ip_banned_time": 3600,
+    "pool_name": "FBPool",
+    "coinbase_message": "FB/BTC",
+    "coinbase_account": false,
+    "spv_mining_timeout": 30
+}
+
