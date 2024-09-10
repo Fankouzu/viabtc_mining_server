@@ -1,5 +1,12 @@
+# 安装部署过程
+
+- Ubuntu 20.04, 2 vCPU, 4G RAM,
+- 先安装redis
+
 ## build
+
 ```sh
+sudo apt update
 sudo apt install -y libcurl4-openssl-dev libssl-dev libpsl-dev libnghttp2-dev libsodium-dev redis-server cmake zlib1g-dev libkrb5-dev libidn2-0-dev librtmp-dev libbrotli-dev libssh-dev 
 
 cd viabtc_mining_server/
@@ -7,7 +14,7 @@ cd depends/hiredis/
 make
 sudo make install
 sudo ldconfig
-cd ../network/
+cd ../../network/
 make
 cd ../utils
 make
@@ -22,8 +29,6 @@ make
 cd ../mineragent
 make
 cd ../poolbench
-vim makefile 
-LIBS = ... -lgssapi_krb5 -lldap -llber -lidn2 -lrtmp -lbrotlidec -lssh -lpsl -lnghttp2
 make
 cd ../metawriter
 make
@@ -33,13 +38,13 @@ cd ../alertcenter
 make
 ```
 
-## run
-```
-矿池服务器的试运行，相关修改记录如下
+## 配置
 
-1.modify config.json
+- 矿池服务器的试运行，相关修改记录如下
 
-jobmaster 目录下的config.json:
+### jobmaster 目录下的config.json
+
+```json
     "flag": "debug" //日志级别为debug
     "main_coin": {
         "name": "FB",
@@ -57,21 +62,32 @@ jobmaster 目录下的config.json:
     ],
     "pool_name": "FBPool",
     "coinbase_message": "FB/BTC",
+```
 
+### gateway 目录下的config.json
 
-gateway 目录下的config.json:
+```json
     "flag": "debug" //日志级别为debug
     "diff_max": 1048576,
+```
 
-metawriter 目录下的config.json:
+### metawriter 目录下的config.json
+
+```json
     "flag": "debug" //日志级别为debug
+```
 
-2.
+### 创建日志目录
+
+```sh
 mkdir -p /var/log/pool/jobmaster
 mkdir -p /var/log/pool/gateway
 mkdir -p /var/log/pool/metawriter
+```
 
-3.
+## 启动
+
+```sh
 cd ../jobmaster
 nohup ./jobmaster.exe config.json
 
