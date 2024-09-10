@@ -21,59 +21,10 @@
     "cli": "tcp@127.0.0.1:6001",
     "main_coin": {
         "name": "BTC",
-        "host": "192.168.0.114",
+        "host": "172.16.1.110",
         "port": 8332,
-        "user": "rpcuser",
-        "pass": "rpcpassword"
-    },
-    "aux_coin": [
-        {
-            "name": "SYS",
-            "host": "192.168.0.114",
-            "port": 8370,
-            "user": "rpcuser",
-            "pass": "rpcpassword"
-        },
-        {
-            "name": "EMC",
-            "host": "192.168.0.114",
-            "port": 6662,
-            "user": "rpcuser",
-            "pass": "rpcpassword"
-        },
-        {
-            "name": "NMC",
-            "host": "192.168.0.114",
-            "port": 8336,
-            "user": "rpcuser",
-            "pass": "rpcpassword"
-        },
-        {
-            "name": "ELA",
-            "host": "192.168.0.114",
-            "port": 20336,
-            "user": "ElaUser",
-            "pass": "Ela123",
-            "address": "EMKQntNVy4NTmCBPiiYuoT9yYrD3XrTydP"
-        }
-    ],
-    "aux_merkle_nonce": 0,
-    "aux_merkle_size": 16,
-    "aux_job_timeout": 15,
-    "rsk_job_interval": 30,
-    "rsk_coin": {
-        "name": "RSK",
-        "host": "192.168.0.114",
-        "port": 4444,
-        "user": "rpcuser",
-        "pass": "rpcpassword"
-    },
-    "vcash_coin": {
-        "name": "VCASH",
-        "host": "127.0.0.1",
-        "port": 3517,
-        "user": "rpcuser",
-        "pass": "rpcpassword"
+        "user": "fractalbitcoin",
+        "pass": "fractalbitcoin_1234567"
     },
     "blockmaster": [
         "tcp@127.0.0.1:5000"
@@ -86,20 +37,8 @@
     },
     "blockmaster_timeout": 60,
     "jobmonitor": "tcp@127.0.0.1:9000",
-    "main_coin_recipient": "15sDLQav35eur1zqjafHhHYZ2xgwf4w874",
+    "main_coin_recipient": "bc1p57tjvdvgn4ljmuyfk7x6uaq7saegfvvgsn349erpe3ptg94wlp0sgtwkly",
     "coin_recipients": [
-        {
-            "address": "17GAyL3udGqifuUuiqaX9Tso8P5giKc4Sc",
-            "percent": 0.2
-        },
-        {
-            "address": "1BfYbcgBd5BcsgmawW53B5Ts8CBgXWpE5s",
-            "percent": 0.4
-        },
-        {
-            "address": "1Ce9278aHSigH6HVwjGTd3SxKsTnEww6GF",
-            "percent":0.3
-        }
     ],
     "main_block_version": 536870928,
     "job_rebroadcast_timeout": 50,
