@@ -5,7 +5,7 @@
     },
     "log": {
         "path": "/var/log/pool/blockmaster",
-        "flag": "fatal,error,warn,info,debug,trace"
+        "flag": "debug"
     },
     "alert": {
         "host": "192.168.1.1",
@@ -26,11 +26,11 @@
         "tcp@127.0.0.1:5100"
     ],
     "coin": {
-        "name": "BTC",
-        "host": "127.0.0.1",
-        "port": 18332,
-        "user": "rpcuser",
-        "pass": "rpcpassword"
+        "name": "FB",
+        "host": "38.60.171.236",
+        "port": 8332,
+        "user": "fractalbitcoin",
+        "pass": "fractalbitcoin_1234567"
     },
     "http_svr": {
         "bind": [

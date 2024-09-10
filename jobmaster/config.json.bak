@@ -5,7 +5,7 @@
     },
     "log": {
         "path": "/var/log/pool/jobmaster",
-        "flag": "debug"
+        "flag": "fatal,error,warn,info,debug,trace"
     },
     "alert": {
         "host": "192.168.1.1",
@@ -20,15 +20,12 @@
     },
     "cli": "tcp@127.0.0.1:6001",
     "main_coin": {
-        "name": "FB",
-        "host": "38.60.171.236",
+        "name": "BTC",
+        "host": "172.16.1.110",
         "port": 8332,
         "user": "fractalbitcoin",
         "pass": "fractalbitcoin_1234567"
     },
-    "aux_merkle_nonce": 0,
-    "aux_merkle_size": 16,
-    "aux_job_timeout": 15,
     "blockmaster": [
         "tcp@127.0.0.1:5000"
     ],
@@ -40,14 +37,14 @@
     },
     "blockmaster_timeout": 60,
     "jobmonitor": "tcp@127.0.0.1:9000",
-    "main_coin_recipient": "1FtiSHFDTpLvurxnBsSTLNT3B4aqyRxm9x",
+    "main_coin_recipient": "bc1p57tjvdvgn4ljmuyfk7x6uaq7saegfvvgsn349erpe3ptg94wlp0sgtwkly",
     "coin_recipients": [
     ],
     "main_block_version": 536870928,
     "job_rebroadcast_timeout": 50,
     "ip_banned_time": 3600,
-    "pool_name": "FBPool",
-    "coinbase_message": "FB/BTC",
+    "pool_name": "ViaBTC",
+    "coinbase_message": "EB1/AD6",
     "coinbase_account": false,
     "spv_mining_timeout": 30
 }

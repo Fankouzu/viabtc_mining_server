@@ -5,7 +5,7 @@
     },
     "log": {
         "path": "/var/log/pool/gateway",
-        "flag": "fatal,error,warn,info,debug,trace"
+        "flag": "debug"
     },
     "alert": {
         "host": "192.168.1.1",
@@ -47,7 +47,7 @@
     "worker_id": 100,
     "worker_num": 2,
     "diff_min": 16,
-    "diff_max": 16384,
+    "diff_max": 1048576,
     "diff_default": 1024,
     "target_time": 4,
     "retarget_time": 120,

@@ -6,7 +6,7 @@
     },
     "log": {
         "path": "/var/log/pool/bitpeer",
-        "flag": "fatal,error,warn,info,debug"
+        "flag": "debug"
     },
     "alert": {
         "host": "192.168.1.1",
@@ -18,11 +18,11 @@
     },
     "cli": "tcp@127.0.0.1:5101",
     "coin": {
-        "name": "BTC",
-        "host": "127.0.0.1",
-        "port": 18332,
-        "user": "rpcuser",
-        "pass": "rpcpassword"
+        "name": "FB",
+        "host": "38.60.171.236",
+        "port": 8332,
+        "user": "fractalbitcoin",
+        "pass": "fractalbitcoin_1234567"
     },
     "http_svr": {
         "bind": [

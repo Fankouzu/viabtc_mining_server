@@ -5,7 +5,7 @@
     },
     "log": {
         "path": "/var/log/pool/metawriter",
-        "flag": "fatal,error,warn,info,debug,trace"
+        "flag": "debug"
     },
     "alert": {
         "host": "192.168.1.1",
