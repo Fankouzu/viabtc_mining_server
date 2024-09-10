@@ -20,23 +20,12 @@
     },
     "cli": "tcp@127.0.0.1:6001",
     "main_coin": {
-<<<<<<< HEAD
-        "name": "FB",
-        "host": "38.60.171.236",
-=======
         "name": "BTC",
         "host": "172.16.1.110",
->>>>>>> 087a9f9df2b813628ecccf795ffe72f1cad42ce4
         "port": 8332,
         "user": "fractalbitcoin",
         "pass": "fractalbitcoin_1234567"
     },
-<<<<<<< HEAD
-    "aux_merkle_nonce": 0,
-    "aux_merkle_size": 16,
-    "aux_job_timeout": 15,
-=======
->>>>>>> 087a9f9df2b813628ecccf795ffe72f1cad42ce4
     "blockmaster": [
         "tcp@127.0.0.1:5000"
     ],
@@ -48,11 +37,7 @@
     },
     "blockmaster_timeout": 60,
     "jobmonitor": "tcp@127.0.0.1:9000",
-<<<<<<< HEAD
-    "main_coin_recipient": "1FtiSHFDTpLvurxnBsSTLNT3B4aqyRxm9x",
-=======
     "main_coin_recipient": "bc1p57tjvdvgn4ljmuyfk7x6uaq7saegfvvgsn349erpe3ptg94wlp0sgtwkly",
->>>>>>> 087a9f9df2b813628ecccf795ffe72f1cad42ce4
     "coin_recipients": [
     ],
     "main_block_version": 536870928,
