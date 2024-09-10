@@ -26,6 +26,9 @@
         "user": "fractalbitcoin",
         "pass": "fractalbitcoin_1234567"
     },
+    "aux_merkle_nonce": 0,
+    "aux_merkle_size": 16,
+    "aux_job_timeout": 15,
     "blockmaster": [
         "tcp@127.0.0.1:5000"
     ],
